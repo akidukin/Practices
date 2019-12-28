@@ -135,7 +135,7 @@ class optimizer_visualize:
             x1t, x2t = self.rmsprop(x1,x2,x1_grad,x2_grad)
         return x1t, x2t
 
-op = optimizer_visualize(function_type = 'sphere')
+op = optimizer_visualize(function_type = 'styblinskitang')
 plot_x = op.init_x
 plot_y = op.init_y
 plot_z = op.use_bench_func(plot_x,plot_y)
@@ -166,4 +166,4 @@ ax.set_ylim(np.min(plot_y), np.max(plot_y))
 ax.set_xlim(np.min(plot_x), np.max(plot_x))
 ax.set_zlim(np.min(plot_z), np.max(plot_z))
 ax.legend()
-plt.savefig('benchmark_functions/sphere_optim.png')
+plt.savefig('benchmark_functions/styblinskitang_optim.png')
