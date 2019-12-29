@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+html {
+    font-size: 100% font-family: serif;
+}
+h1 {
+    font-size: 2rem font-family: '游ゴシック', 'Yu Gothic';
+}
+h2 {
+    font-size: 20px;
+}

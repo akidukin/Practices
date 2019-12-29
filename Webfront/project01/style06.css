@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+body{
+    text-align : center;
+    
+}
+.freetext{
+    background : gray;
+    width : 500px;
+    height : 500px;
+    border-width: 3px;
+    border-color: gray;
+    border-style: dotted;
+}

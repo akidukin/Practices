@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+div {
+    background: #0db;
+    width: 500px;
+    height: 300px;
+    margin : 30px 0 0 100px;
+    padding : 40px;
+    border-width : 1px 4px 8px 12px;
+    border-style : solid;
+}
+div p {
+    border-bottom : 5px dotted #0bd;
+    /*border-width : thick;
+    border-style: solid;
+    border-color: blue;*/
+}
+p.blue_{
+    color:navy;
+}
+.blue {
+    color: #0bd;
+}
+#orange {
+    color: orange;
+}
+p {
+    color: gray;
+    border-width : 1px;
+    border-style : solid;
+    border-color:gray;
+}
+ul {
+    list-style-type : square;
+    list-style-position : outside;
+    list-style-image:url(statics/icon_list.png)
+}
+ol {
+    list-style-type : hiragana;
+    list-style-position : inside;
+}
+li {
+    background : tomato;
+}

@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+body{
+    background-color: #f5f2e5;
+    background-image: url(background.jpeg);
+    background-repeat : no-repeat;
+    background-position : 30px 80px;
+    background-size: cover;
+    height: 100vh;
+    background-position: top center;}
+div p{
+    background: #70a2dc url(background.jpeg) no-repeat center bottom/cover;
+    height: 100vh;
+}
+h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    color : #0bd;
+    background-color: #faa;
+}
+h2 {
+    color : navy;
+}
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    line-height: 1.7;
+    text-align: center;
+    color : rgb(10,130,165,.5);
+}
