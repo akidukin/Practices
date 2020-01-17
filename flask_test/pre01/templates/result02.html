@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+    <head>
+        Python関数呼び出しテスト
+    </head>
+
+    <img src='./static/image/images.jpg' alt='kaguyachan' /><br>
+
+    <p>UPLOADED PICTURE:<img src={{ x }} /></p>
+    {{ x }}
+    <p>That result of : </p>
+        {% for a in y %}
+            <p> {{a}} </p>
+        {% endfor %}
+    <p>{{x}}</p>
+
+    <form action='/'>
+        <button type='submit'>Return previouse Page</button>
+    </form>
+
+</html>

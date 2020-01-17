@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+    <head>
+        Python関数呼び出しテスト
+    </head>
+
+    <img src='./static/image/images.jpg' alt='kaguyachan' /><br>
+
+    <p>x,y,zの値を入力してね</p>
+
+    <p>Graph Type : {{ y }}</p>
+    <p>RESULT OF GRAPH : <img src="{{url_for('static',filename='image/uploader/sphere.png')}}"><p>
+    {{x}}
+    <form action='/plot_xyz_point' method='get'>
+        <p>X : <input type='text' name = 'x' value=0.0 formmethod='get'></p>
+        <p>Y : <input type='text' name = 'y' value=0.0 formmethod='get'></p>
+        <button type='submit' formmethod='get'>描画する</p>
+    </form>
+
+    <form action='/'>
+        <button type='submit'>Return previouse Page</button>
+    </form>
+
+</html>

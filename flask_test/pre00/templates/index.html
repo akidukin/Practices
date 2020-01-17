@@ -1,0 +1,24 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    </head>
+    <body>
+
+        <img src="/static/image/images.jpg" alt="kaguyasama" /><br>
+
+        <form action='/test' method='post'>
+            <input name='text' value={{ x }}><br>
+            {% for select in selects%}
+                <input type='radio' name='radio_type' value={{ select }} checked>{{ select }}<br>
+            {% endfor %}<br>
+            <input type='submit'>
+        </form>
+
+        <p>Get Result : {{ x }}</p>
+        <p>Get Request Parameter : {{ s }}</p>
+        <p>Get Radio Result : {{x1}}</p>
+        <p>Your Browzer IP : {{ip}}</p>
+
+    </body>
+</html>

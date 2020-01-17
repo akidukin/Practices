@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+    <img src='static/print_html/images.jpg' /><br>
+
+    <head>
+        Python Flask 試してみた
+    <head>
+    <body>
+
+        <form action='/identify_number' method = 'post' enctype='multipart/form-data'>
+            手書き文字画像をアップロードしてください:
+            <input type='file' name='upload_picture'>
+            <button type='submit'>あっぷろ～ど</button>
+        </form>
+
+        <form action='/' method='GET'>
+            <button type='submit'>アップロードに戻る</button>
+        </form>
+
+        {% if finish %}
+            <img src={{picture_path}} alt='アップロードされた画像'/><br>
+            <p>アップロードされた数字は : {{predict_value1}} です</p>
+            {% for val0, val1 in predict_value2 %}
+                <p>{{val0}} : {{val1}} % </p>
+            {% endfor %}
+        {% endif %}
+
+    </body>
+</html>

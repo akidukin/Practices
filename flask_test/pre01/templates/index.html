@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+    <head>
+        Python関数呼び出しテスト
+    </head>
+
+    <body>
+
+        <img src='static/image/images.jpg' alt='kaguyachan' /><br>
+
+        <form action='/test' method='get'>
+            Input Number:
+            <input type='text' name='input the number' value = '10'>
+            <button type='submit' formmethod='get'>+1するよ</button>
+        </form>
+
+        <form action='/uploader' method='post' enctype='multipart/form-data'>
+            Input Picture:
+            <input type='file' name='pict'>
+            <button type='submit' formmethod='post'>画像をRGBタイプで返すよ</button>
+        </form>
+
+        <form action='/plot_temporary' method='get'>
+            Plot Graphs :<br>
+            {% for t in graph_types %}
+                <input type='radio' name='graph_type' value={{ t }}>{{t}}</input><br>
+            {% endfor %}
+            <button type='submit' name='output graph' value='plot' formmethod='get'>グラフ出力するよ</button>
+        </form>
+
+        Current Directory : {{ x }}
+
+    </body>
+
+</html>
